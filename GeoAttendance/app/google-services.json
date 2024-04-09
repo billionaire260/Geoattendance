@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705993562100",
+    "project_id": "geofencing-8cbe2",
+    "storage_bucket": "geofencing-8cbe2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705993562100:android:8b16fcd0ad1ac5d2944ba1",
+        "android_client_info": {
+          "package_name": "com.example.geo_attendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705993562100-7su0mr6qr5n8k5tducnib4sonoknot7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWdUOMfD_Botft1hcs2OCyCWaQ4NVaN-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705993562100-7su0mr6qr5n8k5tducnib4sonoknot7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

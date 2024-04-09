@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@android:color/black"
+    android:background="@android:color/darker_gray"
+    app:cardCornerRadius="20dp"
+    android:elevation="20dp"
+    android:paddingTop="23dp"
+    android:paddingBottom="28px"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="27px"
+        android:paddingBottom="28px"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/samplefname"
+            android:text="Employee"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/samplesurname"
+            android:text="Employee Surname"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sampledepartment"
+            android:text="Employee Surname"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

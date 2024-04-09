@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".OffOfficeRequest">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:id="@+id/offtoolbar"
+        app:title="OFF OFFICE REQUESTS"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offtoolbar"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="FIRSTNAME"
+        android:id="@+id/offfname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Last Name"
+        android:id="@+id/offflname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="PLace description"
+        android:id="@+id/offplace"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_margin="10dp"
+        android:hint="Request Purpose"
+        android:id="@+id/offfpurpose"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textStyle="bold"
+           android:text="Enter location details"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/mylatitude"
+                android:layout_marginLeft="15dp"
+                android:hint="Latitude"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/mylongitude"
+                android:hint="Latitude"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not sure of latitude and longitude?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current location will be used"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/teal_200"
+        android:backgroundTint="@color/teal_200"
+        android:id="@+id/sendrequest"
+        android:text="SEND REQUEST"/>
+    </LinearLayout>
+
+</RelativeLayout>

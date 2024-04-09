@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.geo_attendance">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GeoAttendance"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".OutAttendance"
+            android:exported="true" />
+        <activity
+            android:name=".PatternVerification"
+            android:exported="true" />
+        <activity
+            android:name=".Myrequests"
+            android:exported="true" />
+        <activity
+            android:name=".OffOfficeRequest"
+            android:exported="true" />
+        <activity
+            android:name=".EmployeesAwayrequests"
+            android:exported="true" />
+        <activity
+            android:name=".Viewweb"
+            android:exported="true" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Empmaps"
+            android:exported="true"
+            android:label="@string/title_activity_empmaps" />
+        <activity
+            android:name=".Sharedfences"
+            android:exported="true" />
+        <activity
+            android:name=".Hrmenu"
+            android:exported="true" />
+        <activity android:name=".Fingerprintverification" />
+        <activity
+            android:name=".MapsActivity1"
+            android:label="@string/title_activity_maps1" />
+        <activity
+            android:name=".Employeemaps"
+            android:label="@string/title_activity_employeemaps" />
+        <activity android:name=".Codeholder" />
+        <activity android:name=".Addnewemployees" />
+        <activity android:name=".MainActivity2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Workers" />
+        <activity android:name=".Firstactivity" />
+        <activity android:name=".SignAttendance" />
+
+        <receiver
+            android:name=".GeofencceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Geofencepage"
+            android:label="@string/title_activity_geofencepage" />
+        <activity android:name=".Details" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

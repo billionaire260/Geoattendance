@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+  <androidx.appcompat.widget.Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/toolbar1"
+      app:title="FENSE PARAMETERS"
+      android:backgroundTint="@color/teal_700"
+      android:background="@color/teal_700"
+      />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        >
+        <Button
+            android:id="@+id/locate"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Derive Geo Details" />
+
+    </com.google.android.material.card.MaterialCardView>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:layout_gravity="center"
+        />
+    <TextView
+
+        android:id="@+id/showLocation"
+        android:layout_width="match_parent"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/teal_700"
+        android:layout_height="wrap_content"
+        android:hint="Location Details"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/progress"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/locatedlatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude" />
+
+
+        <TextView
+            android:id="@+id/locatedlongitude"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:text="Longitude" />
+
+
+
+
+    <TextView
+
+        android:id="@+id/showLocationb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/teal_700"
+        android:hint="Details key"
+        android:textSize="24sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emkey"
+            android:layout_marginBottom="30dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/createmap"
+        android:layout_alignParentBottom="true"
+        android:text="CREATE THIS FENCE"
+        />
+
+
+</LinearLayout>
