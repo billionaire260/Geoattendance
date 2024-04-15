@@ -126,19 +126,16 @@ public class Geofencepage extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        switch (id){
-            case R.id.createfense:
-                enableuserlocation();
-                createfense();
-                Toast.makeText(getApplicationContext(),"Fense created",Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.sharefence:
-                 sharefence();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+        if (id == R.id.createfense) {
+            enableuserlocation();
+            createfense();
+            Toast.makeText(getApplicationContext(), "Fense created", Toast.LENGTH_SHORT).show();
+            return true;
+        } else if (id == R.id.sharefence) {
+            sharefence();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     public void createfense()

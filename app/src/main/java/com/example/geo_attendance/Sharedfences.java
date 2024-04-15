@@ -51,13 +51,11 @@ FirebaseRecyclerOptions<Models> options ;
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        switch (id){
-            case R.id.myrs:
-                startActivity(new Intent(getApplicationContext(),Myrequests.class));
-                return true;
-                default:
-                return super.onOptionsItemSelected(item);
+        if (id == R.id.myrs) {
+            startActivity(new Intent(getApplicationContext(), Myrequests.class));
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     public void fetch()

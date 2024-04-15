@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/GeoAttendance (2).iml" filepath="$PROJECT_DIR$/.idea/GeoAttendance (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Geo-Attendance.iml" filepath="$PROJECT_DIR$/.idea/modules/Geo-Attendance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Geo-Attendance.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Geo-Attendance.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Geo-Attendance.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Geo-Attendance.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Geo-Attendance.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Geo-Attendance.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Geo-Attendance.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Geo-Attendance.app.unitTest.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1023304870847",
+    "project_id": "geoattendance-90f54",
+    "storage_bucket": "geoattendance-90f54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023304870847:android:604d3abf733f0de9d88f0a",
+        "android_client_info": {
+          "package_name": "com.example.geo_attendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMkKO1H2GyPw-aDZwHQ5xEa7EJ6brglz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

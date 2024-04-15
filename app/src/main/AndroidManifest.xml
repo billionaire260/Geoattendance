@@ -68,7 +68,8 @@
             android:label="@string/title_activity_employeemaps" />
         <activity android:name=".Codeholder" />
         <activity android:name=".Addnewemployees" />
-        <activity android:name=".MainActivity2">
+        <activity android:name=".MainActivity2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

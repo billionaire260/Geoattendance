@@ -87,15 +87,13 @@ public class Empmaps extends AppCompatActivity implements OnMapReadyCallback, Go
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        switch (id) {
-            case R.id.empsign:
-                enableuserlocation();
-                createfense();
-                Toast.makeText(getApplicationContext(), "Wait for entry notification", Toast.LENGTH_LONG).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (id == R.id.empsign) {
+            enableuserlocation();
+            createfense();
+            Toast.makeText(getApplicationContext(), "Wait for entry notification", Toast.LENGTH_LONG).show();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
