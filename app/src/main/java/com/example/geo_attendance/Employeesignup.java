@@ -57,10 +57,12 @@ public class Employeesignup extends Fragment {
                 }
                 progressDialog.setMessage("Processing");
                 progressDialog.show();
-                firebaseAuth.signInWithEmailAndPassword(empemail.getText().toString(),
-                        emppassword.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                firebaseAuth.signInWithEmailAndPassword(
+                        empemail.getText().toString(),
+                        emppassword.getText().toString()
+                ).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onComplete( Task<AuthResult> task) {
+                    public void onComplete(Task<AuthResult> task) {
                         if(task.isSuccessful())
                         {
                             DatabaseReference myref = mydb.getReference().child("employee").child(firebaseAuth.getCurrentUser().getUid()).child("type");

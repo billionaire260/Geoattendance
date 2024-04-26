@@ -105,12 +105,12 @@ public class Hrmenu extends AppCompatActivity {
                             finish();
 
                 }
-                //startActivity(new Intent(getApplicationContext(),Geofencepage.class));
-                //finish();
-                else
-                {
-                    return;
-                }
+                startActivity(new Intent(getApplicationContext(),Geofencepage.class));
+                finish();
+//                else
+//                {
+//                    return;
+//                }
             }
         });
         employees.setOnClickListener(new View.OnClickListener() {
